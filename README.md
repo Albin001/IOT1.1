@@ -1,0 +1,4 @@
+# IOT1.1
+AIM OF PROJECT IS MONITORING THE AGRICULTURE  USING IOT
+PYTHON , FLASK FRAMEWORK ,CSS ,HTML5 AND JAVASCRIPT IS USED HERE 
+User can Monitor their Agriculture   through our Software From Any Part of The World

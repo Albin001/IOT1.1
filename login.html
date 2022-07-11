@@ -5,17 +5,20 @@
         <script>
             function valid()
             {
-                a1=document.r1.getElementById("user").value 
-                a2=document.r1.getElementById("pass").value
-                if(a1=="albin" &&   a2=="123")
+                a1=document.r1.yt.value
+                a2=document.r1.yt1.value
+                a="albin"
+                b="123"
+    
+                if(a1==a &&   a2==b)
                 {
-                    alert("Your Password and User Name is Correct")
-                   return false
+                    alert("Your User name and Password Is Correct")
+                   return true
                 }
                 else
                 {
-                    alert("Your Password and User Name is Correct")
-                    return true
+                  alert("Your User name and password is not Correct")
+                    return false
                 }
             }
         </script>
@@ -27,7 +30,7 @@
                 <input type="text" name="yt" id="user" placeholder="Enter you  user name "/>
                 <br> <br>
                 <label> PASSWORD </label>
-                <input type="text" name="yt" id="pass" placeholder="Enter your  Password" />
+                <input type="text" name="yt1" id="pass" placeholder="Enter your  Password" />
                 <br> <br>
                 <input type="submit" value="SUBMIT" />
                 <br> <br>

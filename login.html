@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>mypage</title>
+        <link rel="stylesheet" type="text/css" href="tut1.css" />
+        <script>
+            function valid()
+            {
+                a1=document.r1.getElementById("user").value 
+                a2=document.r1.getElementById("pass").value
+                if(a1=="albin" &&   a2=="123")
+                {
+                    alert("Your Password and User Name is Correct")
+                   return false
+                }
+                else
+                {
+                    alert("Your Password and User Name is Correct")
+                    return true
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="n1">
+            <form name="r1"   onsubmit="return valid()" action="front.html">
+                <label> USER NAME </label>
+                <input type="text" name="yt" id="user" placeholder="Enter you  user name "/>
+                <br> <br>
+                <label> PASSWORD </label>
+                <input type="text" name="yt" id="pass" placeholder="Enter your  Password" />
+                <br> <br>
+                <input type="submit" value="SUBMIT" />
+                <br> <br>
+                <input type="reset" value="RESET" />
+
+            </form>
+
+        </div>
+    </body>
+
+</html>

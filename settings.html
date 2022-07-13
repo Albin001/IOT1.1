@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-     <link rel="stylesheet"  type="text/css"  href="tut.css" />
+     <link rel="stylesheet"  type="text/css"  href="{{url_for('static',filename='css/s1.css')}}" />
 </head>
 <body>
-<form name="myfrom" method="post" action="wer.html" >
-    <label id="t1"> TEMPERATURE THRESHOLD</label>
-    <input type="text" name="number1" id="t3" placeholder="Enter Your Value" />
-    <br> <br>
-     <label id="t2"> WATER THRESHOLD</label>
-    <input type="text" name="number2" id="t4" placeholder="Enter Your Value" />
-    <br> <br>
-      <label id="t5"> MOISTURE THRESHOLD</label>
-    <input type="text" name="number3" id="t6" placeholder="Enter Your Value" />
-    <br> <br>
-    <input type="submit" value="SUBMIT" />
-    <br> <br>
-    <input type="reset" value="RESET" />
-</form>
+<div class="e1">
+
+      <form action = "http://localhost:5000/process" method = "post">
+         <p>Temperature Threshold:</p>
+         <p><input type = "text" name = "nm" /></p>
+         <br> <br>
+          <p>Moistute:</p>
+         <p><input type = "text" name = "nm1" /></p>
+         <br> <br>
+          <p>Water:</p>
+         <p><input type = "text" name = "nm2" /></p>
+         <br> <br>
+         <p><input type = "submit" value = "submit" /></p>
+         <br> <br>
+         <p><input type = "reset" value = "reset" /></p>
+      </form>
+
+</div>
 </body>
 </html>

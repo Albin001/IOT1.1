@@ -1,31 +1,11 @@
 <html>
     <head>
         <title>mypage</title>
-        <link rel="stylesheet" type="text/css" href="tut1.css" />
-        <script>
-            function valid()
-            {
-                a1=document.r1.yt.value
-                a2=document.r1.yt1.value
-                a="albin"
-                b="123"
-    
-                if(a1==a &&   a2==b)
-                {
-                    alert("Your User name and Password Is Correct")
-                   return true
-                }
-                else
-                {
-                  alert("Your User name and password is not Correct")
-                    return false
-                }
-            }
-        </script>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/tut1.css')}}" />
     </head>
-    <body>
+    <body  background="{{url_for('static',filename='image/e4.png')}}">
         <div class="n1">
-            <form name="r1"   onsubmit="return valid()" action="front.html">
+            <form action="http://localhost:5000/log" method="post">
                 <label> USER NAME </label>
                 <input type="text" name="yt" id="user" placeholder="Enter you  user name "/>
                 <br> <br>
